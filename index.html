@@ -1,0 +1,172 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Duati ❤️</title>  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">  <style>
+    :root {
+      --bg: #0f0b0d;
+      --primary: #e63946;
+      --soft: #f1c6cc;
+      --text: #f5f5f5;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: linear-gradient(180deg, #0f0b0d, #1a0f14);
+      color: var(--text);
+      font-family: 'Playfair Display', serif;
+      overflow: hidden;
+    }
+
+    .page {
+      display: none;
+      height: 100vh;
+      padding: 60px 20px;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 0.9s ease;
+    }
+
+    .page.active { display: flex; }
+
+    h1, h2 { margin-bottom: 18px; }
+
+    .script { font-family: 'Pacifico', cursive; color: var(--soft); }
+
+    p { max-width: 720px; line-height: 1.8; }
+
+    .nav { margin-top: 40px; display: flex; gap: 20px; }
+
+    button {
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      background: var(--primary);
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button.secondary { background: transparent; border: 1px solid var(--soft); }
+
+    .photo {
+      width: 260px;
+      max-width: 90%;
+      height: auto;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    input {
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    footer { font-size: 0.9rem; opacity: 0.7; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.96); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .heart {
+      position: fixed;
+      bottom: -20px;
+      color: rgba(230,57,70,0.6);
+      animation: floatUp linear forwards;
+    }
+
+    @keyframes floatUp {
+      to { transform: translateY(-120vh); opacity: 0; }
+    }
+
+    .music { position: fixed; top: 15px; right: 15px; font-size: 0.9rem; opacity: 0.8; }
+  </style></head>
+<body>  <!-- Music Integration -->  <audio id="bgMusic" autoplay loop>
+    <source src="waiting-aint-easy.mp3" type="audio/mpeg">
+  </audio>
+  <div class="music"><button onclick="toggleMusic()">🎵 Our Song</button></div>  <!-- Page 1 -->  <div class="page active">
+    <h1>Duati ❤️</h1>
+    <p class="script">This website exists for one reason — you.</p>
+    <p>Each page is a feeling.</p>
+    <div class="nav"><button onclick="nextPage()">Next →</button></div>
+  </div>  <!-- Page 2 -->  <div class="page">
+    <h2>Our Story</h2>
+    <p>Some stories don’t begin loudly. Ours began with comfort, understanding, and a feeling that stayed.</p>
+    <div class="nav"><button class="secondary" onclick="prevPage()">← Back</button><button onclick="nextPage()">Next →</button></div>
+  </div>  <!-- Page 3 -->  <div class="page">
+    <h2>Why I Love You</h2>
+    <p>You make chaos feel calm. You understand my silence. You feel like home.</p>
+    <div class="nav"><button class="secondary" onclick="prevPage()">← Back</button><button onclick="nextPage()">Next →</button></div>
+  </div>  <!-- Photo Pages -->  <div class="page"><h2>Memory One</h2><img class="photo" src="photo1.jpg"><p>This was a quiet moment, but it stayed with me longer than loud ones ever could.</p><div class="nav"><button class="secondary" onclick="prevPage()">← Back</button><button onclick="nextPage()">Next →</button></div></div>
+  <div class="page"><h2>Memory Two</h2><img class="photo" src="photo2.jpg"><p>Nothing special was happening here — and somehow that’s what made it perfect.</p><div class="nav"><button class="secondary" onclick="prevPage()">← Back</button><button onclick="nextPage()">Next →</button></div></div>
+  <div class="page"><h2>Memory Three</h2><img class="photo" src="photo3.jpg"><p>This is one of those moments I didn’t realize I’d miss until later.</p><div class="nav"><button class="secondary" onclick="prevPage()">← Back</button><button onclick="nextPage()">Next →</button></div></div>
+  <div class="page"><h2>Memory Four</h2><img class="photo" src="photo4.jpg"><p>I remember how calm everything felt right here, like the world slowed down for us.</p><div class="nav"><button class="secondary" onclick="prevPage()">← Back</button><button onclick="nextPage()">Next →</button></div></div>
+  <div class="page"><h2>Memory Five</h2><img class="photo" src="photo5.jpg"><p>This wasn’t a big day, but it became an important one to me.</p><div class="nav"><button class="secondary" onclick="prevPage()">← Back</button><button onclick="nextPage()">Next →</button></div></div>
+  <div class="page"><h2>Memory Six</h2><img class="photo" src="photo6.jpg"><p>Somehow, even now, this moment still feels close.</p><div class="nav"><button class="secondary" onclick="prevPage()">← Back</button><button onclick="nextPage()">Next →</button></div></div>
+  <div class="page"><h2>Memory Seven</h2><img class="photo" src="photo7.jpg"><p>If I ever needed proof of how much you mean to me, it would be this.</p><div class="nav"><button class="secondary" onclick="prevPage()">← Back</button><button onclick="nextPage()">Next →</button></div></div>  <!-- Tulip Page -->  <div class="page">
+    <h2>Tulips</h2>
+    <img class="photo" src="tulips.jpg" alt="Tulips">
+    <p>I noticed you like tulips long before I understood why. Now I think it’s because they’re quiet, steady, and they don’t try too hard. A bit like you.</p>
+    <div class="nav"><button class="secondary" onclick="prevPage()">← Back</button><button onclick="nextPage()">Next →</button></div>
+  </div>  <!-- Secret Lock -->  <div class="page">
+    <h2>One Last Page</h2>
+    <p>This opens only with a name from our future.</p>
+    <input id="secretInput" placeholder="Our future daughter’s name" />
+    <div class="nav"><button onclick="unlockSecret()">Unlock ❤️</button><button class="secondary" onclick="prevPage()">← Back</button></div>
+  </div>  <!-- Secret Page -->  <div class="page" id="secretPage">
+    <h2 class="script">Our Future</h2>
+    <p>I don’t just imagine tomorrow — I imagine it with you.</p>
+    <footer>Happy Valentine’s Day ❤️ — Duata</footer>
+  </div>  <script>
+    let current = 0;
+    const pages = document.querySelectorAll('.page');
+    const SECRET_NAME = 'Faith';
+
+    function nextPage() {
+      if (current < pages.length - 1) {
+        pages[current].classList.remove('active');
+        current++;
+        pages[current].classList.add('active');
+      }
+    }
+
+    function prevPage() {
+      if (current > 0) {
+        pages[current].classList.remove('active');
+        current--;
+        pages[current].classList.add('active');
+      }
+    }
+
+    function unlockSecret() {
+      const val = document.getElementById('secretInput').value.trim().toLowerCase();
+      if (val === SECRET_NAME.toLowerCase()) {
+        pages[current].classList.remove('active');
+        document.getElementById('secretPage').classList.add('active');
+      } else { alert('That name belongs to our future ❤️'); }
+    }
+
+    function toggleMusic() {
+      const music = document.getElementById('bgMusic');
+      music.paused ? music.play() : music.pause();
+    }
+
+    setInterval(() => {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.textContent = '♥';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = 6 + Math.random() * 4 + 's';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 10000);
+    }, 900);
+  </script></body>
+</html>
